@@ -197,10 +197,10 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\notblank{#4}{\toggletrue{righttitledefined}}{}
 	\ifboolexpr{togl {lefttitledefined} or togl {centertitledefined} or togl {righttitledefined}}{
 		\iftoggle{centertitledefined}{
-			% Center title defined, use three columns
-			\begin{tabu} to 1\textwidth { X[l,p] X[c,p] X[r,p] }
-				\textbf{#2} & \textbf{#3} & \textbf{#4} \\
-			\end{tabu}
+			% Center title defined, use flexible layout that prevents wrapping
+			\noindent\makebox[\textwidth][s]{%
+				\textbf{#2}\hfill\textbf{#3}\hfill\textbf{#4}%
+			}\\
 		}{
 			% Center title NOT defined, use two columns for left and right to extend toward center
 			\begin{tabu} to 1\textwidth { X[l,p] r }
