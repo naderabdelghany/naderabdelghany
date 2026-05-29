@@ -196,8 +196,10 @@
 	\notblank{#4}{\toggletrue{righttitledefined}}{}
 	\ifboolexpr{togl {lefttitledefined} or togl {centertitledefined} or togl {righttitledefined}}{
 		\iftoggle{centertitledefined}{
-			% Center title defined, use flexible layout that prevents wrapping
-			\noindent\makebox[\textwidth][s]{%
+			% Center title defined, use flexible layout that prevents wrapping.
+			% Inset by \tabcolsep on each side to match the tabu layout below.
+			\noindent\hspace*{\tabcolsep}%
+			\makebox[\dimexpr\textwidth-2\tabcolsep\relax][s]{%
 				\textbf{#2}\hfill\textbf{#3}\hfill\textbf{#4}%
 			}\\
 		}{
