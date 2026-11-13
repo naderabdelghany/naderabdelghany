@@ -47,10 +47,13 @@
 	\begin{cvsection}{WORK EXPERIENCE}
 		\begin{cvsubsection}{Software Engineer -- Remote}{FrontStory}{Feb 2022 -- May 2026}
 			\begin{itemize}
-				\item Owned the full development lifecycle of a React Native app for a WordPress news website with \textasciitilde270K monthly active users, covering ad monetization, analytics, user engagement flows, and 20+ production releases on iOS and Android
-				\item Solely maintained a Django-based campaign creation tool launching 100K+ ad campaigns annually across 5\\ Demand-Side Platforms (DSPs)
-				\item Integrated 2 additional DSP APIs, expanding campaign reach and diversification
-				\item Leveraged parallel processing to reduce creatives processing times by 60\%, eliminating request timeouts
+				\item Launched and owned the full development lifecycle of a React Native app for a WordPress news website with \textasciitilde270K MAU across 20+ production releases on iOS and Android
+				\item Implemented mobile revenue and retention pipelines by integrating Google AdMob and Taboola SDKs,\\AppsFlyer deep linking, and OneSignal push notification workflows
+				\item Solely maintained a Django campaign creation tool launching 100K+ ads annually across 5 ad platforms
+				\item Leveraged Python multiprocessing to reduce ad creative processing times by 60\%, eliminating request timeouts
+				\item Integrated 2 additional ad platform APIs, expanding campaign reach and diversification
+				\item Prototyped a TypeScript rebuild of the Campaign Creator using Serverless Stack Toolkit (SST), AWS, and React in a monorepo, establishing a single source of truth, global type safety, and faster extensibility for new ad platforms
+				\item Enforced data integrity and security via full-stack validation, dynamic React forms with cascading async fields, hierarchical RBAC, and Amazon Cognito authentication
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Software Developer -- Freelance}{5 jobs, \textasciitilde2 months total effort}{Nov 2020 -- Nov 2021}
@@ -62,14 +65,6 @@
 	\end{cvsection}
 	
 	\begin{cvsection}{PROJECTS}
-		\begin{cvsubsection}{FrontStory Campaign Creator Rebuild}{}{Serverless Stack Toolkit (SST), AWS, React}
-			\begin{itemize}
-				\item Prototyped an in-house ad campaign creation tool using a TypeScript SST monorepo for serverless scalability, \linebreak single-source-of-truth, and global type safety
-				\item Designed for data integrity through full-stack data validation, robust exception handling, hierarchical role-based access control, and secure auth flows via Amazon Cognito
-				\item Built a responsive UI featuring dynamic, dependent, and async forms to streamline the campaign creation process
-				\item Structured the codebase for reusability and extensibility to support seamless integration of new ad platforms
-			\end{itemize}
-		\end{cvsubsection}
 		\begin{cvsubsection}{Kabsa}{}{C++, Lex, Yacc, Compilers}
 			\begin{itemize}
 				\item Built a compiler that supports 8 language constructs, detects semantic and syntactic errors, and generates code for a hypothetical stack-based machine
